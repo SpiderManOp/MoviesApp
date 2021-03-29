@@ -38,6 +38,7 @@ class MovieListViewController: UIViewController, UISearchBarDelegate, UISearchRe
         searchController.searchBar.delegate=self
     }
     func updateSearchResults(for searchController: UISearchController) {
+        detailView.isHidden=true
         if let search = searchController.searchBar.text {
             print("User Typed in search = \(search)")
             self.SearchStruct.searchMoviesWith(query: search)

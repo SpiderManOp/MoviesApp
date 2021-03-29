@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VIK-Jk-epB">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MovieListViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WKC-L1-wKb">
-                                <rect key="frame" x="0.0" y="50" width="1024" height="32"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="32"/>
                                 <segments>
                                     <segment title="Now Playing"/>
                                     <segment title="Most Popular"/>
@@ -28,31 +28,31 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fDy-L1-14S">
-                                <rect key="frame" x="0.0" y="81" width="1077" height="1265"/>
+                                <rect key="frame" x="0.0" y="75" width="481" height="817"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieListCell" id="ipU-fQ-N4D" customClass="MovieListCell" customModule="Movies" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1077" height="165.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="481" height="165.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ipU-fQ-N4D" id="m5d-ff-Fay">
-                                            <rect key="frame" x="0.0" y="0.0" width="1077" height="165.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="481" height="165.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="02e-SR-GjX">
-                                                    <rect key="frame" x="20" y="20" width="80" height="125.5"/>
+                                                    <rect key="frame" x="20" y="19.999999999999993" width="80" height="125.33333333333331"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="125" id="WPB-oN-DsP"/>
                                                         <constraint firstAttribute="width" constant="80" id="q9v-fe-0xm"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-UQ-sk3">
-                                                    <rect key="frame" x="110" y="71" width="890" height="23.5"/>
+                                                    <rect key="frame" x="110" y="71" width="290" height="23.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-27-SgA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="1077" height="165.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="481" height="165.33333333333334"/>
                                                     <connections>
                                                         <action selector="detailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fd-5J-kCy"/>
                                                         <action selector="informationButtonAction:" destination="ipU-fQ-N4D" eventType="touchUpInside" id="4Qi-cY-H8p"/>
@@ -128,7 +128,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLA-7i-qwJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="L6w-T1-Kwz"/>
                                                         </constraints>
@@ -137,7 +137,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4G-74-Dak">
-                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.5"/>
+                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -151,7 +151,7 @@
                                                 <rect key="frame" x="0.0" y="40" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaJ-ZT-weM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="Ogy-ZR-Oh2"/>
                                                         </constraints>
@@ -160,7 +160,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Release Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-p9-lbH">
-                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.5"/>
+                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -174,7 +174,7 @@
                                                 <rect key="frame" x="0.0" y="80" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Rating:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIz-F7-RZ6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.333333333333332"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="A4J-wt-Y6C"/>
                                                         </constraints>
@@ -183,7 +183,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-8A-t9v">
-                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.5"/>
+                                                        <rect key="frame" x="120" y="0.0" width="223" height="23.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -261,16 +261,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1775.9765624999998" y="-313.17715959004391"/>
+            <point key="canvasLocation" x="-1084" y="-432"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3UO-RN-Vow">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VIK-Jk-epB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" id="VIK-Jk-epB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ee-iT-LJV">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
